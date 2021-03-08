@@ -12,4 +12,4 @@ git clone "https://github.com/sudarsankumar/Rock-Paper-Scissors-Using-JS.git"
 ```
 
 ## demo link
-[Password Generator for our requirements](https://sudarsankumar.github.io/password-generator-of-fifferent-length-and-combination-using-html-css-js/)
+[Password Generator for our requirements](https://sudarsankumar.github.io/Rock-Paper-Scissors-Using-JS/)
