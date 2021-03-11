@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors-Using-JS
-This is a simple project done using javascript that makes you get your childhood memories back. This game was almost everyone's favourite game while our schooling. Experience it by playing against computer
+This is a simple project done using javascript that makes you realise best out of three wins it all, not to rock other's paper scissors
 ## Table Of Contents
 - [Installation](#installation)
 - [Sample Link](#sample-link)
