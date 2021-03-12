@@ -2,6 +2,10 @@ const selectionButtons = document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector('[data-final-column]')
 const computerScoreSpan = document.querySelector('[data-computer-score]')
 const yourScoreSpan = document.querySelector('[data-your-score]')
+const restartButton = document.getElementById('restartButton')
+const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
+var yourScore=0
+var compScore=0
 const SELECTIONS = [
     {
         name: 'rock',
@@ -34,8 +38,26 @@ function makeSelection(selection)
     const computerWinner = isWinner(computerSelection, selection)
     addSelectionResult(computerSelection, computerWinner)
     addSelectionResult(selection, yourWinner)
-    if (yourWinner) incrementScore(yourScoreSpan)
-    if (computerWinner) incrementScore(computerScoreSpan)
+    if (yourWinner) 
+    {
+        incrementScore(yourScoreSpan)
+        yourScore+=1
+    }
+    if (computerWinner) 
+    {
+        incrementScore(computerScoreSpan)
+        compScore+=1
+    }
+    if(yourScore==5)
+    {
+        alert("You Win")
+        window.location.reload()
+    }
+    if(compScore==5)
+    {
+        alert("Computer Win")
+        window.location.reload()
+    }
 }
 function incrementScore(scoreSpan) 
 {
