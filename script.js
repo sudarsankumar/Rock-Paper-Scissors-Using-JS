@@ -50,14 +50,22 @@ function makeSelection(selection)
     }
     if(yourScore==5)
     {
+        addSelectionResult(computerSelection, computerWinner)
+        addSelectionResult(selection, yourWinner)
         alert("You Win")
-        window.location.reload()
+        reloadPage()
     }
     if(compScore==5)
     {
+        addSelectionResult(computerSelection, computerWinner)
+        addSelectionResult(selection, yourWinner)
         alert("Computer Win")
-        window.location.reload()
+        reloadPage()
     }
+}
+function reloadPage()
+{
+    window.location.reload()
 }
 function incrementScore(scoreSpan) 
 {
